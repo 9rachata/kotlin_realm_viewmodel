@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:background="#FFFFFF"
+             android:layout_height="match_parent"
+             tools:context=".RealMFragment">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:layout_height="match_parent">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                        android:layout_margin="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                    <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/txtFirstName"
+                            android:maxLines="1"
+                            android:hint="First Name :"
+                            android:textSize="15dp"
+                            android:layout_width="328dp"
+                            android:layout_height="wrap_content"/>
+
+                    <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/txtLastName"
+                            android:maxLines="1"
+                            android:hint="Last Name :"
+                            android:textSize="15dp"
+                            android:layout_width="328dp"
+                            android:layout_height="wrap_content"/>
+
+                    <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/txtAge"
+                            android:maxLines="1"
+                            android:hint="Age :"
+                            android:inputType="number"
+                            android:textSize="15dp"
+                            android:layout_width="328dp"
+                            android:layout_height="wrap_content"/>
+
+                    <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/txtCity"
+                            android:maxLines="1"
+                            android:hint="City :"
+                            android:textSize="15dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_width="328dp"
+                            android:layout_height="wrap_content"/>
+
+
+                    <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/selectGender"
+                            android:layout_width="328dp"
+                            android:textSize="15dp"
+                            android:layout_marginBottom="20dp"
+                            android:entries="@array/gender"
+                            android:layout_height="wrap_content">
+
+                    </android.support.v7.widget.AppCompatSpinner>
+
+                    <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/btnInsert"
+                            android:text="Insert"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+        </LinearLayout>
+
+        <SearchView android:layout_width="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:id="@+id/search">
+
+        </SearchView>
+
+        <android.support.v7.widget.RecyclerView
+                android:layout_margin="10dp"
+                android:id="@+id/recRealM"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>
